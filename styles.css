@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #f0f,
+    0 0 10px #f0f,
+    0 0 20px #f0f,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 5px #f0f,
+      0 0 10px #f0f,
+      0 0 20px #f0f,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+  to {
+    text-shadow:
+      0 0 10px #ff0,
+      0 0 20px #ff0,
+      0 0 30px #ff0,
+      0 0 40px #ff0,
+      0 0 50px #ff0,
+      0 0 60px #ff0,
+      0 0 70px #ff0,
+      0 0 80px #ff0;
+  }
+}
+
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  border-radius: 9999px; /* Повністю округлені краї */
+  background-color: rgba(0, 255, 255, 0.7);
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#feedback {
+  font-size: 24px;
+  margin-top: 20px;
+  min-height: 40px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
